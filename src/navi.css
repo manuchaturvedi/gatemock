@@ -1,0 +1,170 @@
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: left;
+    background-color:#033249;
+    color:white
+
+}
+.logo img{
+    max-height: 130px;
+    max-width: 130px;
+    margin-left:20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+.brand-title {
+    top:50%;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-top: 20px;
+    margin-right: 100px;
+    font-family: parmanent marker;
+    
+    
+}
+
+.navbar-links {
+    height: 13%;
+    margin-right: 10%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links ul {
+    list-style: none;
+}
+
+header .highlight,header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+header a:hover{
+    color: #red;
+    font-weight: bold;
+}
+.current::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: red;
+    transition: width .3s;
+}
+.current:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.navbar-links ul  a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding:1.5rem ;
+    font-size: 1rem;}
+    .current:hover{
+        color: red;
+    }
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media(max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #jack .jone{
+    float: left;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+#boxes .box{
+    
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+.box{
+    width: 100%;
+    display: inline-block;
+}
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+   .brand-title {
+    margin-left: auto;
+    margin-right: auto;
+   } 
+   .logo img{
+    margin: auto;    
+   } 
+   .forr{
+    min-height: 800px;
+}
+}
+
+.fab{
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fab a{
+    color:white;
+    padding: 2px; 
+}
+ul{
+    margin: 0;
+    padding: 0;
+}

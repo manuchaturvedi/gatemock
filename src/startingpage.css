@@ -1,0 +1,14 @@
+.startingpage{
+    margin: 2%;
+    padding: 0; 
+}
+
+.firstapp{
+   padding:10px;
+   padding-right: 100px;
+   display: inline-block;
+}
+.secondapp{
+    padding:10px;
+    display: inline-block;
+}
