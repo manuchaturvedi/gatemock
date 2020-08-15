@@ -75,12 +75,11 @@ class App extends React.Component {
     }
     finished=()=>
     {
-      if(this.state.currentquestion===this.state.qbank.length-1  ){
         this.setState({
-          quizend:true
+          quizend:!quizend
         })
       }
-    }
+    
   
 
     startquiz=(whic)=>
