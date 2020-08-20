@@ -93,7 +93,10 @@ display: block;
 .point{
   padding: 20px;
 }
-
+.message{
+  width: 100%;
+  margin-top:px
+}
 .questionstyle{
   color:#f7faf5;
 }

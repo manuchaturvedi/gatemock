@@ -2,3 +2,10 @@
     width: 50%;
     height: 80vh;
   }
+
+  @media(max-width: 800px) {
+    .w-100 {
+      width: 50%;
+      height: 40vh;
+    }
+  }

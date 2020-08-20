@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Carousel from 'react-bootstrap/Carousel'
 import "./slider.css";
 
@@ -16,7 +15,7 @@ function Slider(props) {
     />
     <Carousel.Caption>
       
-      <p>Check our Preparation with DBMS Quiz </p>
+      
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -33,7 +32,7 @@ function Slider(props) {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="GATETALK.jpg"
+      src="gatetalk.jpg"
       alt="Third slide"
     />
 

@@ -3,6 +3,7 @@ import './startingpage.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
+import Tooltip from "@material-ui/core/Tooltip";
 function Startingpage(props) {
     return (
         <div>
@@ -15,8 +16,13 @@ function Startingpage(props) {
     <Card.Text>
       {props.disc}
     </Card.Text>
+    <Tooltip
+        title="Login to start test"
+        placement="right"
+      >
     <Button onClick={()=>props.startquiz()}
-                 variant="primary" size="lg" active={false}>start</Button>
+                 variant="primary" size="lg" active={false}>start</Button>          
+    </Tooltip>
   </Card.Body>
   </Card>
             

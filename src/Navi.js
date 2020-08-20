@@ -9,17 +9,16 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import DehazeIcon from '@material-ui/icons/Dehaze';
 
 function Navi() {
     return (
         <div>
             <nav class="navbar"> 
-      <div class="logo"><img src="logoforweb.png" />  </div>       
+      <div class="logo"><img src="logoforweb.png" alt="logo" />  </div>       
         <div class="brand-title"><p>Gatemock</p></div>
         <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <DehazeIcon style={{ fontSize: 40,color:"white" }}/>
         </a>
         <div class="navbar-links"> 
     

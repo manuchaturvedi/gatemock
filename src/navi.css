@@ -78,14 +78,17 @@ header a:hover{
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 21px;
+    height: 1px;
+
+    
 }
 
 .toggle-button .bar {
-    height: 3px;
+    height: 1px;
     width: 100%;
-    background-color: white;
-    border-radius: 10px;
+    background-color:white;
+    margin-top:5px;
+    border-radius: 5px;
 }
 
 @media(max-width: 800px) {
@@ -93,14 +96,7 @@ header a:hover{
         flex-direction: column;
         align-items: flex-start;
     }
-    #jack .jone{
-    float: left;
-    width: 100%;
-    border-radius: 20px;
-    padding: 10px;
-    text-align: center;
-    display: inline-block;
-}
+  
 
 #boxes .box{
     
@@ -112,11 +108,13 @@ header a:hover{
 }
 .box{
     width: 100%;
+    margin-top:10px;
     display: inline-block;
 }
 
     .toggle-button {
         display: flex;
+        height: 10px;
     }
 
     .navbar-links {

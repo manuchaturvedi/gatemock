@@ -31,6 +31,7 @@ import Col from 'react-bootstrap/Col';
             <Row className="question">
             <Col>
             {props.question}
+            
         </Col>
         </Row>
         <Row className="buttonclass">

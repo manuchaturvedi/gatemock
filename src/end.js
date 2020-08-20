@@ -4,7 +4,6 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import DoneIcon from '@material-ui/icons/Done';
 import CloseIcon from '@material-ui/icons/Close';
 import ReplayIcon from '@material-ui/icons/Replay';
-import Button from 'react-bootstrap/Button';
 
 function End(props){
   function refreshPage() {
@@ -22,6 +21,7 @@ function End(props){
     <h2>{props.points}</h2>
     <ReplayIcon style={{  cursor:"grab"}} onClick={refreshPage}/> Replay
      </div>
+     
     </Jumbotron> 
  )}
 export default End;
