@@ -1,9 +1,19 @@
 const que =[
     {
         id:"01",
-        question:"what is array index in c",
-        option:["0","1","2","3"],
-        answer:"0"
+        question:'What will be the output of the following pseudocode?\n'+
+
+        '    Integer n\n'+
+        
+        '    for (n = 3; n != 0; n--)\n'+
+        
+        '   Print n\n'+
+        
+        '   n = n-1\n'
+        
+        +'  end for',
+       option:["1","2","3","4"],
+       answer:"1"
     },
     {
         id:"02",

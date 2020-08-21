@@ -124,3 +124,9 @@ display: block;
   height: 400px;
 }
 }
+.but{
+justify-items: center;
+justify-content: center;
+text-align: center;
+align-items: center;
+}

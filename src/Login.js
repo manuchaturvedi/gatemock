@@ -58,7 +58,8 @@ export default class Login extends Component {
                placeholder="enter email address"
                onChange={this.handleChange}
                value={this.state.email}
-              />          
+              />      
+                 
               </Form.Group>
                 <Form.Group controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
@@ -67,6 +68,9 @@ export default class Login extends Component {
                   placeholder="enter the password"
                   onChange={this.handleChange}
                   value={this.state.password}/>
+                  <Form.Text className="text-muted">
+                    If you don't have account then please! click signup .
+              </Form.Text> 
                 </Form.Group>
                 <Form.Group controlId="formBasicCheckbox">
                  </Form.Group>

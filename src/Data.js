@@ -30,7 +30,9 @@ import Col from 'react-bootstrap/Col';
             </Row>
             <Row className="question">
             <Col>
-            {props.question}
+            {props.question.split('\n').map((item, key) => {
+  return <React.Fragment key={key}>{item}<br/></React.Fragment>
+})}
             
         </Col>
         </Row>

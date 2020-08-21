@@ -27,12 +27,12 @@ class App extends React.Component {
         user:{},
         login:false,
         show:false,
-        showalert:false
+        showalert:false,
+        attempt:2
         
       }
-      
     }
-  
+   
 
     authListener(){
       fire.auth().onAuthStateChanged((user)=>{
@@ -107,12 +107,14 @@ class App extends React.Component {
 
     startquiz=(whic)=>
     {
-      this.setState({
+      this.setState(prevState=>({
         start:true,
         showalert:true,
         currentquestion:0,
+        attempt:prevState.attempt-1,
         qbank:[...whic],
-      })
+      }))
+      console.log(this.state.attempt);
     }
 
     startlogin=()=>{
@@ -129,11 +131,12 @@ class App extends React.Component {
     return(
       <End
      points={this.state.points}
+     
     />
     )}
     else{ 
     
-    if(this.state.start && this.state.user)
+    if(this.state.start && this.state.user && this.state.attempt)
     {return(
       <div>
       <Data
