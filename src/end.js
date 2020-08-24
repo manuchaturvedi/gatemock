@@ -54,6 +54,7 @@ const useStyles = makeStyles({
 
 function End(props){
   const db=firebaseConfig.firestore();
+  const [disabled,setDisable]=useState(false)
   const [pointing,setPoints]= useState([12,122])
   const [input,setInput]=useState([])
   function refreshPage() {
@@ -81,16 +82,25 @@ function End(props){
   var user = firebase.auth().currentUser;
   var email=user.email;
   const {points}=props;
+
+
  const score=(event)=>{
   event.preventDefault();
+  
   db.collection('points').add({
     pointing:points,
     user:email,
+    attempt:true,
     timestamp:firebase.firestore.FieldValue.serverTimestamp()
   })
 
   setPoints([...pointing,points,email]);
     console.log(user.email)
+
+    
+  setDisable({disabled: true});
+  
+
   }
 
  return(  
@@ -99,7 +109,7 @@ function End(props){
     <h1>Congratulations </h1>
     <div className="point">
     <DoneIcon style={{ color:"green" }}/> {props.points} correct  
-    <CloseIcon style={{ color:"red" }}/> {4-props.points} wrong 
+    <CloseIcon style={{ color:"red" }}/> {15-(props.points)} wrong 
     </div>
     <p>Points scored are:</p>
     <h2>{props.points}</h2>
@@ -109,7 +119,7 @@ function End(props){
 
      </div>
      <div className="but">
-     <Button onClick={score} >submit score to rank</Button>
+     <Button onClick={score} disabled={disabled}>{disabled ? 'Submitted':'submit score to view rank'}</Button>
      </div>
      <div className="but">
      <TableContainer component={Paper} align="center">

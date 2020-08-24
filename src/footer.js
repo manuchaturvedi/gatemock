@@ -10,7 +10,7 @@ function Footer(props) {
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p class="text-justify">GATEMOCk is startup to help student attain the goal for gate preparation in LockDown in India <i> This is free for All </i> is an initiative to help the engineering student for the gate. We will help student build up concepts in differe.</p>
+            <p class="text-justify">GATEMOCk is startup to help student attain the goal for gate preparation in LockDown in India <i> This is free for All </i> is an initiative to help the engineering student for the gate. We will help student build up concepts in different areas of computer science.</p>
           </div>
 
           <div class="col-xs-6 col-md-3">

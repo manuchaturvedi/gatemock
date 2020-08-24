@@ -222,7 +222,7 @@ class App extends React.Component {
      <div className="firstapp">
      <Startingpage
         title="G.A.T.E MOCK"
-        disc="Computer science mock test from the manch design"
+        disc="Capegimini mock test from the GATEMOCK"
         show={this.state.login}
         showalert={this.state.showalert}
         startquiz={()=>this.startquiz(que)}

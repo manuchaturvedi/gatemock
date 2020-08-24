@@ -25,7 +25,7 @@ import Col from 'react-bootstrap/Col';
             <div className="heading1">
             <Row className="heading2">
             <Col className="questionstyle">
-        {props.ids}. <div  style={{display:(props.qcount<4)?"inline":"none"}}>QUESTION</div>
+        {props.ids}. <div  style={{display:(props.qcount<15)?"inline":"none"}}>QUESTION</div>
             </Col>
             </Row>
             <Row className="question">
@@ -62,7 +62,7 @@ import Col from 'react-bootstrap/Col';
    
     `}
   </style>
-            {props.option.map(option=>(<Button variant="flat" active={false}  block onClick={(props.qcount<4)?()=>props.selected(option):()=>props.finished()}>{option}</Button>))}        
+            {props.option.map(option=>(<Button variant="flat" active={false}  block onClick={(props.qcount<15)?()=>props.selected(option):()=>props.finished()}>{option}</Button>))}        
             
             </>
             </Col>

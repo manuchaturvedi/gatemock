@@ -4,6 +4,9 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl';
+import "./App.css";
+import Alert from 'react-bootstrap/Alert'
+
 export default class Login extends Component {
     constructor(props)
     {super(props)
@@ -14,16 +17,21 @@ export default class Login extends Component {
      this.state={
          email:"",
          password:"",
-         show:true
+         show:true,
+          errorlogin:false,
+          errorsignin:false
 
      }
     }
+    
     login(e){
         e.preventDefault()
         fire.auth().signInWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
             console.log(u)
         }).catch((err)=>{
-            console.log(err)
+           this.setState(()=>
+           {return {errorlogin:true}}
+           )
         })
     }  
     handleChange(e){
@@ -36,7 +44,11 @@ export default class Login extends Component {
         fire.auth().createUserWithEmailAndPassword(this.state.email,this.state.password).then((u)=>{
             console.log(u)
         }).catch((err)=>{
-            console.log("this on");
+          this.setState(()=>
+          {return {errorsignin:true,
+                   errorlogin:false
+          }}
+          )
         })
     }
     
@@ -69,7 +81,7 @@ export default class Login extends Component {
                   onChange={this.handleChange}
                   value={this.state.password}/>
                   <Form.Text className="text-muted">
-                    If you don't have account then please! click signup .
+                    {this.state.errorlogin?<Alert variant="danger">wrong password or email,please signin if you are a new user</Alert>:this.state.errorsignin?<Alert variant="warning">if you are a new user please use proper email and password</Alert>:<div>"If you don't have account then please! click signup"</div> }
               </Form.Text> 
                 </Form.Group>
                 <Form.Group controlId="formBasicCheckbox">
