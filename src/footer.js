@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css'
+import MyForm from './feedback';
 
 function Footer(props) {
     return (
@@ -26,13 +27,9 @@ function Footer(props) {
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
+            <h6>contact us  </h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            <MyForm/>
             </ul>
           </div>
         </div>
@@ -43,6 +40,7 @@ function Footer(props) {
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
          <a href="#"> MachTech</a>.
+         
             </p>
           </div>
 

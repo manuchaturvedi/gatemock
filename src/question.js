@@ -12,8 +12,8 @@ const que =[
         '   n = n-1\n'
         
         +'  end for',
-       option:["1","2","3","4"],
-       answer:"1"
+       option:["1","2","3","infinite loop"],
+       answer:"infinite loop"
     },
     {
         id:"02",
@@ -24,8 +24,8 @@ const que =[
     },
     {
         id:"03",
-        question:'find output of code\n\nint main()\n{int n;\nfor (n = 9; n!=0; n--)\nprintf("n = %d", n--);\n return 0;\n}',
-        option:["9 7 5 3 1","9 8 7 6 5 4  3 2 1","infinite Loop","9 7 5 3"],
+        question:'find output of code\n\nint main()\n{int n;\nfor (n = 9; n!=0; n--)\n{printf("n = %d", n--);\n return 0;\n}',
+        option:["9 7 5 3 1","9 8 7 6 5 4 3 2 1","infinite Loop","9 7 5 3"],
         answer:"infinite Loop"
     },
     {
@@ -59,24 +59,24 @@ const que =[
     },
     {
      id:"09",
-     question:'find output for \n int a;\na = (5,6);\nprintf(“%d”,a)',
+     question:'find output for \n int a;\na = (5,6);\nprintf(“%d”,a);',
      option:["5","6"," runtime error","compile time error"],
      answer:"6"
     },
     {
      id:"10",
-     question:'find output\n\nint a =4,b =3,c;\nc = a-- -b;\nprintf(“\n%d%d%d”,a,b',
+     question:'find output\n\nint a =4,b =3,c;\nc = a-- -b;\nprintf(“%d%d%d”,a,b);',
      option:["3 2 1","3 3 1","1 2 1","4 3 0"],
      answer:"3 3 1"
     },
     {id:"11",
-     question:'find output \n\n int a[ 5] = {5,1,15,20,25};\nint i,j,k = 1,m;\ni = ++a[1];\nj = a[1]++;\nm = a[i++];\nprintf(“\n%d %d %d”,i,j,',
+     question:'find output \n\n int a[ 5] = {5,1,15,20,25};\nint i,j,k = 1,m;\ni = ++a[1];\nj = a[1]++;\nm = a[i++];\nprintf(“%d %d %d”,i,j,k);',
      option:["3 2 15","20 15 3","25 20 1","5 2 1"],
      answer:"3 2 15"
     },
      {
          id:"12",
-         question:'find output for program\n\n  . static int a[5];\nint i;\nfor( i = 0; i<=4; i++)\n printf(“%d ”,a[i])',
+         question:'find output for program\n\n  static int a[5];\nint i;\nfor( i = 0; i<=4; i++){\n printf(“%d ”,a[i]);}',
          option:["0 0 0 0 0","1 2 3 4 5","1 1 1 1 1","error"],
          answer:"0 0 0 0 0"
      },
@@ -88,7 +88,7 @@ const que =[
      },
      {
       id:"14",
-      question:'main( )\n{  \nint i = 5, j = 3;\ncalc( &i , j);\n printf(“\n %d %d”,i,j);} \ncalc( int *i, int j)\n {\n *i =*i * *i;\nj = j*j\n}',
+      question:'main( )\n{  \nint i = 5, j = 3;\ncalc( &i , j);\n printf(“\n %d %d”,i,j);} \ncalc( int *i, int j)\n {\n *i =*i * *i;\nj = j*j;\n}',
       option:["25 3","5 3","125 9","25 9"],
       answer:"25 3",
      },

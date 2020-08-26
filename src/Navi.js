@@ -25,7 +25,7 @@ function Navi() {
                        <ul>
                        <li class="current"><a href="index.html"><HomeIcon/>  Home</a></li>
             <li class="current"><a href="wwu.html"><WorkIcon/>work with us</a></li>
-            <li class="current"><a href="how.html"><HowToRegIcon/>how are we??</a></li>
+            <li class="current"><a href=""><HowToRegIcon/>Query and feedback</a></li>
             <li class="current"><a href="connect.html"><ContactMailIcon/>contact</a></li>
 
           </ul>

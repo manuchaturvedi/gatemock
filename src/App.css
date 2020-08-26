@@ -134,3 +134,29 @@ justify-content: center;
 text-align: center;
 align-items: center;
 }
+input[type=text] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: block;
+}
+input[type=email] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: block;
+}
+.buttonsubmit{
+  background-color: #008CBA; /* Green */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin-top: 5px;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
