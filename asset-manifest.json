@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/gatemock/static/css/main.929f1d0a.chunk.css",
+    "main.js": "/gatemock/static/js/main.e5291897.chunk.js",
+    "main.js.map": "/gatemock/static/js/main.e5291897.chunk.js.map",
+    "runtime-main.js": "/gatemock/static/js/runtime-main.70b084cf.js",
+    "runtime-main.js.map": "/gatemock/static/js/runtime-main.70b084cf.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/gatemock/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.e458926a.chunk.js": "/gatemock/static/js/2.e458926a.chunk.js",
+    "static/js/2.e458926a.chunk.js.map": "/gatemock/static/js/2.e458926a.chunk.js.map",
+    "index.html": "/gatemock/index.html",
+    "precache-manifest.d886cc68f5e004e4e6d349a0cc89d3df.js": "/gatemock/precache-manifest.d886cc68f5e004e4e6d349a0cc89d3df.js",
+    "service-worker.js": "/gatemock/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/gatemock/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.929f1d0a.chunk.css.map": "/gatemock/static/css/main.929f1d0a.chunk.css.map",
+    "static/js/2.e458926a.chunk.js.LICENSE.txt": "/gatemock/static/js/2.e458926a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70b084cf.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.e458926a.chunk.js",
+    "static/css/main.929f1d0a.chunk.css",
+    "static/js/main.e5291897.chunk.js"
+  ]
+}
